@@ -38,3 +38,13 @@ function sendMessage() {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=919078572171&text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
 }
+
+function sendNote() {
+    const phone = prompt("Enter the phone number (with country code, e.g., 919078572171):");
+    if (!phone || phone.trim() === '') return;
+    const message = prompt("Enter your note:");
+    if (!message || message.trim() === '') return;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+}

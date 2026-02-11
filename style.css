@@ -190,3 +190,18 @@ button:active {
 .share a:hover {
     transform: scale(1.1);
 }
+
+.send-note-btn {
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.send-note-btn:hover {
+    transform: scale(1.1);
+}
