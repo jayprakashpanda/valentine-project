@@ -205,3 +205,7 @@ button:active {
 .send-note-btn:hover {
     transform: scale(1.1);
 }
+
+.send-note-other {
+    margin-top: 20px;
+}
