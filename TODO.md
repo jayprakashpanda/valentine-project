@@ -1,0 +1,12 @@
+- [x] Edit script.js: Remove alert pop-ups from goYes and goNo functions for direct navigation, add JavaScript for custom heart cursor following mouse.
+- [x] Edit index.html: Add 'yes-btn' and 'no-btn' classes to buttons, add div for custom cursor.
+- [x] Edit style.css: Add styles for button classes with backgrounds and enhanced animations (pulse on click, better hover), add styles for custom cursor div with animation, add more floating hearts to main page.
+- [x] Test the changes by opening index.html in browser.
+- [x] Edit yes.html: Add textarea and send button for WhatsApp message to 9078572171.
+- [x] Edit no.html: Add textarea and send button for WhatsApp message to 9078572171.
+- [x] Edit script.js: Add sendMessage function to open WhatsApp link.
+- [x] Create message.html with the message form.
+- [x] Edit yes.html and no.html: Remove message form, add "Send Note" button linking to message.html.
+- [x] Edit style.css: Add .broken-cursor class with shake animation.
+- [x] Edit script.js: Add mouseenter/mouseleave on .no-btn to toggle .broken-cursor on #custom-cursor.
+- [x] Create valentine.html: Single shareable HTML file with all content inline.
