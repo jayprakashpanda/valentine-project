@@ -166,3 +166,46 @@ button:active {
 .message-form button:hover {
     transform: scale(1.1);
 }
+
+.share {
+    margin-top: 30px;
+}
+
+.share p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.share a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #ff6a88, #ff99ac);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.share a:hover {
+    transform: scale(1.1);
+}
+
+.send-note-btn {
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.send-note-btn:hover {
+    transform: scale(1.1);
+}
+
+.send-note-other {
+    margin-top: 20px;
+}
