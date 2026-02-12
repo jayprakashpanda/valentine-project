@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ 2<!DOCTYPE html>
 <html>
 <head>
     <title>Send a Note</title>
@@ -11,6 +11,13 @@
     <h1>Send a Note 💌</h1>
 
     <div class="message-form">
+        <input type="password" id="password" placeholder="Enter password to unlock Contact 2">
+        <select id="contact">
+            <option value="">Select Contact</option>
+            <option value="919078572171">Contact 1</option>
+            <option value="917008175703">Contact 3</option>
+            <option value="919078557611">Contact 4</option>
+        </select>
         <textarea id="message" placeholder="Write your message here..."></textarea>
         <button onclick="sendMessage()">Send via WhatsApp</button>
     </div>

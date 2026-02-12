@@ -26,17 +26,60 @@ document.addEventListener('DOMContentLoaded', function() {
             cursor.innerHTML = '💖';
         });
     }
+
+    // Password unlock for Contact 2
+    const passwordInput = document.getElementById('password');
+    if (passwordInput) {
+        passwordInput.addEventListener('input', function() {
+            if (this.value === 'jayprakash') {
+                const select = document.getElementById('contact');
+                // Check if Contact 2 is already added
+                const options = select.options;
+                let exists = false;
+                for (let i = 0; i < options.length; i++) {
+                    if (options[i].value === '917847837153') {
+                        exists = true;
+                        break;
+                    }
+                }
+                if (!exists) {
+                    const option = document.createElement('option');
+                    option.value = '917847837153';
+                    option.text = 'Contact 2';
+                    select.appendChild(option);
+                }
+                // Hide the password input
+                this.style.display = 'none';
+            }
+        });
+    }
 });
+
+const contacts = [
+    { name: 'Contact 1', phone: '919078572171' },
+    { name: 'Contact 2', phone: '917847837153' },
+    { name: 'Contact 3', phone: '917008175703' },
+    { name: 'Contact 4', phone: '919078557611' }
+];
 
 function sendMessage() {
     const message = document.getElementById('message').value;
+    const selectedPhone = document.getElementById('contact').value;
     if (message.trim() === '') {
         alert('Please enter a message.');
         return;
     }
+    if (!selectedPhone) {
+        alert('Please select a contact.');
+        return;
+    }
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=919078572171&text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/${selectedPhone}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
+    // Clear the textarea after sending
+    document.getElementById('message').value = '';
+    // Redirect to main page after sending
+    window.location.href = "index.html";
 }
 
 function sendNote() {
